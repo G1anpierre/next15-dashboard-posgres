@@ -7,9 +7,9 @@ interface SearchProps {
   placeholder: string;
 }
 
-interface SearchEvent extends React.ChangeEvent<HTMLInputElement> {}
+type SearchEvent = React.ChangeEvent<HTMLInputElement>;
 
-export default function Search({ placeholder }: { placeholder: string }) {
+export default function Search({ placeholder }: SearchProps) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
