@@ -1,8 +1,5 @@
-import { fetchCustomers, fetchFilteredCustomers } from "@/app/lib/data";
+import { fetchFilteredCustomers } from "@/app/lib/data";
 import { Metadata } from "next";
-import { lusitana } from "@/app/ui/fonts";
-import Search from "@/app/ui/search";
-import { Suspense } from "react";
 import CustomersTable from "@/app/ui/customers/table";
 
 export const metadata: Metadata = {
