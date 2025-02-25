@@ -5,6 +5,11 @@ import { fetchLatestInvoices } from "@/app/lib/data";
 import { Suspense } from "react";
 import { CardsSkeleton, RevenueChartSkeleton } from "@/app/ui/skeletons";
 import CardWrapper from "@/app/ui/dashboard/card-wrapper";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dashboard | Acme Dashboard",
+};
 
 export default async function Page() {
   const latestInvoices = await fetchLatestInvoices();
